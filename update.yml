@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name:  update the system
+    apt:
+      update_cache: true

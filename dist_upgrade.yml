@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: doing apt dist-upgrade
+    apt:
+      upgrade: "dist"
